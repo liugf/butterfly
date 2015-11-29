@@ -3,9 +3,6 @@
 use Illuminate\Database\Seeder;
 use Illuminate\Database\Eloquent\Model;
 
-use App\Models\User;
-use App\Models\Article;
-
 class DatabaseSeeder extends Seeder
 {
     /**
