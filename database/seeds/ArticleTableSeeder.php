@@ -14,7 +14,7 @@ class ArticleTableSeeder extends Seeder
      */
     public function run()
     {
-		User::orderBy('id', 'desc')->take(50)->get()->each(function($user) {
+		User::take(50)->get()->each(function($user) {
 			$user->articles()->save(factory(Article::class)->make());
 		});
     }
