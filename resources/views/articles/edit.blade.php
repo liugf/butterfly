@@ -2,7 +2,7 @@
 
 @section('content')
 
-	<h2>创建新文章</h2>
+	<h2>编辑文章</h2>
 
 	<hr/>
 
@@ -11,7 +11,7 @@
 	{{--{!! Form::submit('Register') !!}--}}
 	{{--{!! Form::close() !!}--}}
 
-	{!! Form::open(['route' => 'articles.store']) !!}
+	{!! Form::model($article, ['url' => route('articles.store', $article->id)]) !!}
 		@include('articles.form')
 	{!! Form::close() !!}
 
