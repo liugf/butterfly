@@ -64,6 +64,16 @@ class ArticleController extends Controller
     {
 		$article = Article::findOrFail($id);
 
+		$this->authorize('update', $article);
+
+//		if (Gate::denies('update', $article)) {
+//			abort(403);
+//		}
+
+//		if ($user->cannot('update', $article)) {
+//			abort(403);
+//		}
+
 		return view('articles.edit', compact('article'));
     }
 
@@ -77,6 +87,8 @@ class ArticleController extends Controller
     public function update(Request $request, $id)
     {
 		$article = Article::findOrFail($id);
+
+		$this->authorize('update', $article);
 
 		$article->update($request->all());
 
