@@ -24,6 +24,14 @@
 					<li><a href="#about">About</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
+
+				@if(Auth::user())
+
+					<p class="navbar-text navbar-right">
+						Hello, {{ Auth::user()->name }}
+					</p>
+
+				@endif
 			</div><!--/.nav-collapse -->
 		</div>
 	</nav>

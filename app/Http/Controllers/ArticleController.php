@@ -36,9 +36,9 @@ class ArticleController extends Controller
      */
     public function store(Requests\ArticleRequest $request)
     {
-        $article = Article::create($request->all());
+        $article = \Auth::user()->articles()->create($request->all());
 
-        redirect($article);
+		return redirect()->route('articles.show', $article->id);
     }
 
     /**
@@ -49,7 +49,9 @@ class ArticleController extends Controller
      */
     public function show($id)
     {
-        //
+        $article = Article::findOrFail($id);
+
+		return view('articles.show', compact('article'));
     }
 
     /**
@@ -60,7 +62,9 @@ class ArticleController extends Controller
      */
     public function edit($id)
     {
-        //
+		$article = Article::findOrFail($id);
+
+		return view('articles.edit', compact('article'));
     }
 
     /**
