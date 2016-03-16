@@ -1,3 +1,5 @@
-import Home from './components/Home';
+import {render} from 'react-dom';
+import routes from './routes';
 
-(new Home()).render('container');
+render(routes, document.getElementById('container'))
+
