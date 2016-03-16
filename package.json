@@ -4,7 +4,7 @@
   "description": "geekidea.cn",
   "main": "build/index.js",
   "scripts": {
-    "start": "webpack-dev-server --progress --colors --hot"
+    "start": "webpack-dev-server --content-base public --progress --colors --hot"
   },
   "repository": {
     "type": "git",
