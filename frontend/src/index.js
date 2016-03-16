@@ -1,4 +1,3 @@
-import ReactDOM from 'react-dom';
-import Header from './components/Header';
+import Home from './components/Home';
 
-ReactDOM.render(<Header/>, document.getElementById('header'));
+(new Home()).render('container');

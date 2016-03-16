@@ -20,7 +20,7 @@
 9 verbose stack     at maybeClose (internal/child_process.js:818:16)
 9 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:211:5)
 10 verbose pkgid geekidea@0.0.1
-11 verbose cwd /Users/gavin/projects/geekidea/frontend
+11 verbose cwd /Users/lorienliu/projects/geedidea/frontend
 12 error Darwin 14.5.0
 13 error argv "/usr/local/lib/node-v4.2.2-darwin-x64/bin/node" "/usr/local/bin/npm" "start"
 14 error node v4.2.2
