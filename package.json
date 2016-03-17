@@ -2,9 +2,10 @@
   "name": "geekidea",
   "version": "0.0.1",
   "description": "geekidea.cn",
-  "main": "build/index.js",
+  "main": "resources/index.js",
   "scripts": {
-    "start": "webpack-dev-server --content-base public --progress --colors --hot"
+    "start": "webpack-dev-server --content-base public --progress --colors --hot",
+    "server": "babel-node resources/server.js"
   },
   "repository": {
     "type": "git",
@@ -36,6 +37,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "babel-cli": "^6.6.5",
     "jquery": "^2.2.1",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
