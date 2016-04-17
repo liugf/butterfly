@@ -2,7 +2,7 @@ import React, { Component, PropTypes } from 'react';
 import { Link } from 'react-router';
 import '../assets/scss/account.scss';
 
-export default class Login extends Component {
+export default class Register extends Component {
     constructor(props) {
         super(props);
     }
@@ -13,7 +13,7 @@ export default class Login extends Component {
                 <div className="random-background"></div>
                 <div className="account-flex-container">
                     <div className="account-container">
-                        <h2>用户登录</h2>
+                        <h2>用户注册</h2>
                         <form action="">
                             <div className="form-group">
                                 <input type="email" className="form-control" id="exampleInputEmail1" placeholder="用户名/手机/邮箱"/>
@@ -29,7 +29,7 @@ export default class Login extends Component {
                             <button type="button" className="btn btn-dark btn-lg">登录</button>
                         </form>
                         <div className="buttom-link">
-                            <Link to='/register'>还没有账户, 马上注册</Link>
+                            <Link to='/login'>已有帐号? 马上登录</Link>
                         </div>
                     </div>
                 </div>

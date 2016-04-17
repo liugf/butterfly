@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import { Link } from 'react-router';
 import '../assets/scss/header.scss';
 import logo from '../assets/img/logo.png';
 
@@ -11,8 +12,8 @@ export default class Header extends Component {
                     <span>用户登录</span>
                 </div>
                 <div className="right">
-                    <a src="/" className="btn btn-dark">注册</a>
-                    <a src="/" className="btn btn-default">登录</a>
+                    <Link className="btn btn-dark" to='/register'>注册</Link>
+                    <Link className="btn btn-default" to='/login'>登录</Link>
                 </div>
             </div>
         );
