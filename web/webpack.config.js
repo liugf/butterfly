@@ -25,9 +25,13 @@ module.exports = {
                 include: __dirname
             },
             {
-                test:   /\.sass$/,
+                test:   /\.scss/,
                 loader: 'style!css!sass',
-                include: path.join(__dirname, 'assets', 'sass')
+                include: path.join(__dirname, 'assets', 'scss')
+            },
+            {
+                test:   /\.(png|gif|jpe?g|svg)$/i,
+                loader: 'url?limit=10000'
             }
         ]
     }

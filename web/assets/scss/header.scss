@@ -1,0 +1,39 @@
+.header {
+    height: 60px;
+    background-color: #fff;
+
+    .logo {
+        padding:8px 2px;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        img {
+            height: 45px;
+            max-width: 100%;
+        }
+    }
+
+    .title {
+        height: 40px;
+        line-height: 40px;
+        padding:10px;
+        position: relative;
+        text-align: center;
+        span {
+            font-size:20px;
+            text-align: center;
+        }
+    }
+    .right {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 14px 2px;
+        a {
+            margin: auto 8px;
+            padding: 5px 26px;
+            border-radius: 17px;
+        }
+    }
+}

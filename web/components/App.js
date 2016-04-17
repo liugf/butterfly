@@ -1,5 +1,6 @@
 import React, { Component, PropTypes } from 'react';
 import Header from './Header';
+import '../assets/scss/common.scss';
 
 export default class App extends Component {
     render() {

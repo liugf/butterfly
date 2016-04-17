@@ -1,0 +1,60 @@
+body {
+    font-family: '微软雅黑','Helvetica Neue',sans-serif,SimHei;
+    -webkit-font-smoothing: antialiased;
+    min-width:800px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+
+/** button begin **/
+
+.btn-dark {
+    color: #fff;
+    background-color: #323A45;
+}
+
+.btn-dark:hover {
+    color: #fff;
+    background-color: #000000;
+}
+
+/** button end **/
+
+
+/** form begin **/
+
+.form-control {
+    height:48px;
+    font-size:16px;
+}
+
+/** form end **/
+
+
+.random-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    background:url('../img/background.jpg') 50% 50% / cover no-repeat fixed;
+}
+
+.random-background:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: rgba(0,0,0,.5);
+}
