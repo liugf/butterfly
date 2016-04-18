@@ -48,10 +48,10 @@ export class Login extends Component {
             <Account title={this.title}>
                 <form action="">
                     <div className="form-group">
-                        <input type="email" className="form-control" id="exampleInputEmail1" placeholder="用户名/手机/邮箱"/>
+                        <input type="email" className="form-control" placeholder="用户名/手机/邮箱"/>
                     </div>
                     <div className="form-group">
-                        <input type="password" className="form-control" id="exampleInputPassword1" placeholder="密码"/>
+                        <input type="password" className="form-control" placeholder="密码"/>
                     </div>
                     <div className="checkbox">
                         <label>
@@ -79,10 +79,10 @@ export class Register extends Component {
             <Account title={this.title}>
                 <form action="">
                     <div className="form-group">
-                        <input type="email" className="form-control" id="exampleInputEmail1" placeholder="用户名/手机/邮箱"/>
+                        <input type="email" className="form-control" placeholder="用户名/手机/邮箱"/>
                     </div>
                     <div className="form-group">
-                        <input type="password" className="form-control" id="exampleInputPassword1" placeholder="密码"/>
+                        <input type="password" className="form-control" placeholder="密码"/>
                     </div>
                     <div className="checkbox">
                         <label>

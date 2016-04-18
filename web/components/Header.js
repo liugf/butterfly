@@ -5,8 +5,8 @@ import '../assets/scss/header.scss';
 import logo from '../assets/img/logo.png';
 
 class Header extends Component {
-    componentWillMount() {
-        document.title = this.props.title;
+    componentWillUpdate(nextProps) {
+        document.title = nextProps.title + ' - ' + this.props.title;
     }
     render() {
         return (
@@ -26,8 +26,9 @@ class Header extends Component {
 
 const mapStateToProps = (state) => {
     return {
-        title: state.title
+        title: state.title,
+        titleSurfix: state.titleSurfix
     }
-}
+};
 
 export default connect(mapStateToProps)(Header);
