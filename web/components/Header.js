@@ -1,15 +1,19 @@
 import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux'
 import { Link } from 'react-router';
 import '../assets/scss/header.scss';
 import logo from '../assets/img/logo.png';
 
-export default class Header extends Component {
+class Header extends Component {
+    componentWillMount() {
+        document.title = this.props.title;
+    }
     render() {
         return (
             <div className="header">
                 <a className="logo" href="/"><img src={logo} alt="logo"/></a>
                 <div className="title">
-                    <span>用户登录</span>
+                    <span>{this.props.title}</span>
                 </div>
                 <div className="right">
                     <Link className="btn btn-dark" to='/register'>注册</Link>
@@ -19,3 +23,11 @@ export default class Header extends Component {
         );
     }
 }
+
+const mapStateToProps = (state) => {
+    return {
+        title: state.title
+    }
+}
+
+export default connect(mapStateToProps)(Header);

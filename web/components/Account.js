@@ -1,8 +1,13 @@
 import React, { Component, PropTypes } from 'react';
+import { connect } from 'react-redux'
 import { Link } from 'react-router';
+import { changeTitle } from '../actions';
 import '../assets/scss/account.scss';
 
 class Account extends Component {
+    componentWillMount() {
+        this.props.changeTitle(this.props.title);
+    }
     render() {
         return (
             <div>
@@ -17,6 +22,20 @@ class Account extends Component {
         );
     }
 }
+
+Account = connect(
+    () => {
+        return {}
+    },
+    (dispatch) => {
+        return {
+            changeTitle: (title) => {
+                dispatch(changeTitle(title));
+            }
+        }
+    }
+)(Account);
+
 
 export class Login extends Component {
     constructor(props) {
