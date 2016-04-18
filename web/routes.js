@@ -1,8 +1,7 @@
 import React from 'react';
-import { Route, IndexRoute } from 'react-router';
+import { Route } from 'react-router';
 import App from './components/App';
-import Login from './components/Login';
-import Register from './components/Register';
+import {Login, Register} from './components/Account';
 import User from './components/User';
 
 export default (

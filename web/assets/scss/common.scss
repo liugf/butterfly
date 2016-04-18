@@ -18,15 +18,14 @@ body {
 .btn-dark {
     color: #fff;
     background-color: #323A45;
-}
 
-.btn-dark:hover {
-    color: #fff;
-    background-color: #000000;
-}
+    &:hover {
+        background-color: #000000;
+    }
 
-.btn-dark:visited {
-    color: #fff;
+    &:hover,&:visited,&:focus {
+        color: #fff;
+    }
 }
 
 /** button end **/
