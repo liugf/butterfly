@@ -6,7 +6,7 @@ import logo from '../assets/img/logo.png';
 
 class Header extends Component {
     componentWillUpdate(nextProps) {
-        document.title = nextProps.title + ' - ' + this.props.title;
+        document.title = nextProps.title + ' - ' + this.props.titleSurfix;
     }
     render() {
         return (

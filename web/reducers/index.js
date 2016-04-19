@@ -11,9 +11,14 @@ function title(state = 'butterfly project', action) {
     }
 }
 
+function titleSurfix(state = 'Coding.net') {
+    return state;
+}
+
 const rootReducer = combineReducers({
     routing,
-    title
+    title,
+    titleSurfix
 });
 
 export default rootReducer;
